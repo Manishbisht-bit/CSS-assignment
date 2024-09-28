@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 100px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        .static-box {
+            background-color: #ff6600;
+            position: static;
+        }
+
+        .relative-box {
+            background-color: #0066cc;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .absolute-box {
+            background-color: #ff9933;
+            position: absolute;
+            top: 150px;
+            left: 100px;
+        }
+
+        .fixed-box {
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .sticky-box {
+            background-color: #ffcc00;
+            height: 50px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+
+        .container .box p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning</h1>
+
+    <div class="sticky-box">Sticky Header</div>
+
+    <div class="container">
+        <div class="box static-box">Static</div>
+        <div class="box relative-box">Relative</div>
+        <div class="box absolute-box">Absolute</div>
+        <div class="box fixed-box">Fixed</div>
+    </div>
+
+</body>
+</html>

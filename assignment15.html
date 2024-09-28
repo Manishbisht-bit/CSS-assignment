@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Effects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .shape {
+            width: 100px;
+            height: 100px;
+            background-color: #FF5722;
+            margin: 20px;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 8px;
+        }
+
+        .move {
+            transform: translate(70px, 70px);
+        }
+
+        .spin {
+            transform: rotate(60deg);
+        }
+
+        .grow {
+            transform: scale(1.7);
+        }
+
+        .tilt {
+            transform: skew(15deg, 10deg);
+        }
+
+        .combo {
+            transform: translate(40px, 40px) rotate(60deg) scale(1.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform Effects</h1>
+    <div class="shape move"></div>
+    <div class="shape spin"></div>
+    <div class="shape grow"></div>
+    <div class="shape tilt"></div>
+    <div class="shape combo"></div>
+</body>
+</html>

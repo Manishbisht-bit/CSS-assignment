@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Box Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            animation: bounce 4s ease-in-out infinite;
+            border-radius: 10px;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(150px) translateY(-50px);
+            }
+            50% {
+                transform: translateX(300px) translateY(0);
+            }
+            75% {
+                transform: translateX(150px) translateY(50px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Smooth Box Animation</h1>
+    <div class="animated-box"></div>
+</body>
+</html>

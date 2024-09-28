@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Images</h1>
+    <picture>
+        <source srcset="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" media="(min-width: 1024px)">
+        <source srcset="https://images.unsplash.com/photo-1506748686214-d6b5fb8377ed" media="(min-width: 768px)">
+        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa" alt="Responsive Image">
+
+    </picture>
+</body>
+</html>

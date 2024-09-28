@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements and Effects</title>
+    <style>
+        a:hover {
+            color: #FF5722;
+        }
+
+        a:focus {
+            outline: 3px dashed #673AB7;
+        }
+
+        p::before {
+            content: "Start: ";
+            color: #4CAF50; 
+        }
+
+        p::after {
+            content: " :End";
+            color: #2196F3;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #E0F7FA;
+        }
+
+        ul li:nth-child(even) {
+            background-color: #FFEB3B;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Elements and Effects</h1>
+    <a href="#">Hover or Focus on me</a>
+    <p>This is a paragraph with pseudo-elements</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</body>
+</html>

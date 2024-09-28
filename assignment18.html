@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS Custom Properties</title>
+    <style>
+        :root {
+            --main-color: #ff5722;
+            --accent-color: #2196f3;
+            --base-font-size: 16px;
+            --base-spacing: 15px;
+        }
+
+        body {
+            font-size: var(--base-font-size);
+            margin: var(--base-spacing);
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h1 {
+            color: var(--main-color);
+            text-align: center;
+        }
+
+        p {
+            color: var(--accent-color);
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Custom Properties Example</h1>
+    <p>This paragraph demonstrates the use of CSS custom properties for colors, spacing, and text styling in a clean layout.</p>
+</body>
+</html>
